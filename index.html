@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roddy Tarea</title>
+    <link rel="stylesheet" href="stylesheet.css">  <!-- importar hoja de estilos -->
+    <script src="index.js"></script>     <!-- importar archivo javascript -->
+</head>
+<body>
+    <div class="background">
+        <form>
+            <p>
+                <h1>Tabla del 7</h1>
+            </p><p>Introduce el numero a multiplicar por 7</p>
+            <br/>
+            <input id="multnum" type="number" />
+            <br/><br/>
+            <input type="button" value="Calcular" onclick="tabladel7()" /><br/>
+        </form>
+        <div id="resultado">
+        </br>
+            <label class="resultado" id="Resultadotabla"><b>resultados</b></label>
+        </div>
+    </div>
+    <!-- #################################### COMPRUEBA CALIFICACIONES #################################### -->
+    <div class="background2">
+        <form>
+            <p>
+                <h1>Nota de Alumnos</h1>
+            </p>
+    
+            <!-- NOTA 1 -->
+            <p>Ingrese la nota 1 del alumno : </p>
+            <br/>
+            <input maxlength="2" id="nota1" type="number" />
+    
+            <!-- NOTA 2 -->
+            <p>Ingrese la nota 2 del alumno : </p>
+            <br/>
+            <input id="nota2" type="number" maxlength="2"/>
+    
+            <!-- NOTA 3 -->
+            <p>Ingrese la nota 3 del alumno : </p>
+            <br/>
+            <input id="nota3" type="number" maxlength="2" />
+    
+            <!-- NOTA 4 -->
+            <p>Ingrese la nota 4 del alumno : </p>
+            <br/>
+            <input id="nota4" type="number" maxlength="2" />
+    
+            <!-- NOTA 5 -->
+            <p>Ingrese la Nota Examen final del almuno : </p>
+            <br/>
+            <input id="exam" type="number" maxlength="2" />
+    
+            <br/><br/>
+            <input type="button" value="Calcular" onclick="cuadernoDeNotas()" /><br/>
+        </form>
+        <div id="resultado">
+        </br>
+            <label class="resultado" id="resultadoalumno"><b>Resultado de Nota Final</b></label>
+        </div>
+    </div>
+<!-- #################################### CONVERTIR GRADOS Fahrenheit a Celsius #################################### -->
+    <div class="background3">
+        <form>
+            <p>
+                <h1>CONVERTIR GRADOS FAHRENHEIT A CELSIUS</h1>
+            </p>
+    
+            <p>Ingrese los grados en Fahrenheit : </p>
+            <br/>
+            <input id="fahrenheit" type="number" />
+    
+            <br/><br/>
+            <input type="button" value="Convertir" onclick="convertirFaC()" /><br/>
+        </form>
+        <div id="resultadocel">
+        </br>
+            <label class="resultado" id="resultadoscelsius"><b>Resultado de conversión a Celsius</b></label>
+        </div>
+    </div>
+
+    <!-- #################################### CONVERTIR GRADOS Celsius a Fahrenheit #################################### -->
+    <div class="background4"  style="color: white;">
+        <form>
+            <p>
+                <h1 style="color: white;">CONVERTIR GRADOS CELSIUS A FAHRENHEIT</h1>
+            </p>
+    
+            <p>Ingrese los grados en Celsius : </p>
+            <br/>
+            <input id="celsius" type="number" />
+    
+            <br/><br/>
+            <input type="button" value="Convertir" onclick="convertirCaF()" /><br/>
+        </form>
+        <div id="resultadofah">
+        </br>
+            <label class="resultado" id="resultadosfahrenheit"><b>Resultado de conversión a Fahrenheit</b></label>
+        </div>
+    </div>
+
+<!-- #################################### Verificador de positivos, negativos y neutros #################################### -->
+    <div class="background5"  style="color: white;">
+        <form>
+            <p>
+                <h1 style="color: white;">VERIFICADOR DE POSITIVOS, NEGATIVOS Y NEUTROS</h1>
+            </p>
+    
+            <!--- NUMERO -->
+            <!-- <p>Escribe un numero : </p>
+            <br/>
+            <input id="getnumber" type="number" />
+            <br/>
+            <br/><br/> -->
+            <input type="button" value="Comprobar 20 Numeros" onclick="verificarnumeros()" /><br/>
+        </form>
+        <div id="resultado">
+        </br>
+        <label class="resultado" id="resultadoneutro"><b>Resultado Neutro</b></label>
+        </br>
+        
+        <label class="resultado" id="resultadonegativo"><b>Resultado Negativo</b></label>
+        </br>
+
+        <label class="resultado" id="resultadopositivo"><b>Resultado Positivo</b></label>
+        </div>
+    </div>
+
+</body>
+
+</html>
